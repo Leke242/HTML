@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 75;
+    padding: 65;
+  
+}
+header {
+    background-color: #f8b400;
+    color: white;
+    padding: 25px;;
+    text-align: center;
+   
+}
+main {
+    padding: 2rem;
+}
+
+h2 {
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+}
+
+button {
+    padding: 0.5rem;
+    background-color: #f8b400;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f69c00;
+}
+.JavaScript File
+Create a file named script.js inside the public folder and paste the following code:
+
+javascript
+Copy code
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    fetch('/contact', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ name, email, message })
+    })
+    .then(response => response.json())
+    .then(data => {
+        alert('Message sent: ' + data.status);
+        document.getElementById('contactForm').reset(); // Clear the form after submission
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+    });
+});

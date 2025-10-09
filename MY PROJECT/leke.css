@@ -1,0 +1,31 @@
+body{
+    background-color: blue;
+.JAMES{
+    padding:0;
+    border: solid;
+    margin: 300px;
+    font-size:xx-large ;
+    font-style: italic;
+    font-weight: bolder;
+    color: gold; 
+   text: spacing trim 0; ;
+}
+.JAMES img{
+    width: 200px;
+    text-align: center;
+    margin: 65px;
+    padding: 75;
+}
+}
+h1{
+    color: chartreuse;
+    font-size: 40px;
+    text-align: center;
+    margin: 25px;
+    text-shadow: 4px 5px 4px white; 
+}
+a{
+  color:red;
+text-align: center;
+}
+

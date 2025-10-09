@@ -1,0 +1,61 @@
+body{
+    background-color: cyan;
+
+    h1{
+        background-color: white;
+     
+     margin: inherit;
+       padding: 20px;
+    text-align: center;
+    }
+ table{
+    width: 100%;
+ border-collapse: collapse;
+ text-align: right;
+
+   
+    td,th,tr {
+        
+        padding: 30px;
+border: 1px solid ;
+    }
+ }
+ h2 {
+text-align: left;
+ }
+ p{
+   text-align: center;
+   padding: 10px; ;
+   width: 80%;
+ }
+ a{
+        text-decoration: red;
+        color: blue;
+
+
+    }
+    
+nav{
+    background-color: lightgrey;
+    padding: 20px;
+    text-align: inherit;
+    font-size: 50px;
+    width: 100%;
+    margin-right: 80px;
+    word-spacing: 80px;
+   }
+   img{
+      border-radius: 50%;
+      display: block;
+      margin-left: auto;
+      margin-right: 20px;
+      width: 20%;
+      height: auto;
+      padding: 20px;
+      text-align: right;
+   }
+   
+   } 
+
+
+    

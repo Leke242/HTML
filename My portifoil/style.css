@@ -1,0 +1,138 @@
+:root {
+    --bg: #0f172a;
+    --text: #f8fafc;
+    --accent: #38bdf8;
+    --card: #1e293b;
+    --secondary: #334155;
+  }
+  
+  body.dark {
+    background-color: var(--bg);
+    color: var(--text);
+  }
+  
+  body.light {
+    background-color: #f8fafc;
+    color: #0f172a;
+  }
+  
+  header {
+    background-color: var(--card);
+    padding: 2rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  
+  nav {
+    margin-top: 1rem;
+  }
+  
+  nav a {
+    color: var(--accent);
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  #theme-toggle {
+    margin-top: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  section {
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  h2 {
+    color: var(--accent);
+    border-bottom: 2px solid var(--secondary);
+    padding-bottom: 0.3rem;
+  }
+  
+  .project {
+    background-color: var(--card);
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  
+  .project.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .skills-list span {
+    background-color: var(--secondary);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+  }
+  
+  #contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  #contact-form input,
+  #contact-form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  #contact-form button {
+    background-color: var(--accent);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--card);
+    margin-top: 2rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 1.8rem;
+    }
+  
+    nav a {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    section {
+      padding: 1rem;
+    }
+  
+    .skills-list {
+      flex-direction: column;
+    }
+  }
+  
